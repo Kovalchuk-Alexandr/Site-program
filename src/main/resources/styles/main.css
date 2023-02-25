@@ -1,0 +1,38 @@
+
+.text-input {                       // глобальные установки для всех текстовых полей,
+    -fx-text-fill: #fafafa;         // цвет текста, как и цвет фона - белый
+    -fx-background-color: #343434;  // задний фон - черный
+    -fx-border-color: #fafafa;      // Цвет рамки
+    -fx-border-radius: 10;          // Скругление углов рамки пкс
+    -fx-padding: 10, 20;
+}
+
+
+.text-input:focused {               // текст при получении фокуса
+    -fx-border-color: #e06249;      // Цвет рамки - красный
+}
+
+.link:hover {
+    -fx-text-fill: #e06249;         // цвет текста, как и цвет фона - белый
+}
+
+.link {
+    -fx-text-fill: #fafafa;         // цвет текста, как и цвет фона - белый
+}
+
+.button {
+    -fx-background-color: #e06249;  // задний фон - красный
+    -fx-border-radius: 10;          // Скругление углов рамки пкс
+    -fx-padding: 10, 20;
+}
+
+
+.button:hover {                     //  Наведение на кнопку, приподымается
+    -fx-translate-y: -5;
+    -fx-translate-x: 5;
+}
+
+
+.button:pressed {                   // При нажатии на кнопку устанавливаем цвет
+    -fx-background-color: #b04ba0;  // задний фон - красный
+}

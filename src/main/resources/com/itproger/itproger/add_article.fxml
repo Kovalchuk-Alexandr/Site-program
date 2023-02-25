@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #343434;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itproger.itproger.controllers.AddArticleController">
+    <children>
+        <Label focusTraversable="false" layoutX="125.0" layoutY="12.0" text="Добавление новой статьи" textFill="WHITE">
+            <font>
+                <Font name="Montserrat SemiBold" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="title_field" focusTraversable="false" layoutX="76.0" layoutY="51.0" prefHeight="40.0" prefWidth="450.0" promptText="Введите название" styleClass="text-input" stylesheets="@../../../styles/main.css">
+            <font>
+                <Font name="Montserrat Regular" size="14.0" />
+            </font>
+        </TextField>
+        <Button alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="228.0" layoutY="342.0" mnemonicParsing="false" onAction="#addArticle" stylesheets="@../../../styles/main.css" text="Добавить статью" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Montserrat Regular" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <TextArea fx:id="intro_field" focusTraversable="false" layoutX="25.0" layoutY="104.0" prefHeight="218.0" prefWidth="252.0" promptText="Введите анонс" styleClass="text-input" stylesheets="@../../../styles/text_erea.css">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="full_text_field" focusTraversable="false" layoutX="320.0" layoutY="104.0" prefHeight="218.0" prefWidth="252.0" promptText="Введите полный текст" styleClass="text-input" stylesheets="@../../../styles/text_erea.css">
+         <font>
+            <Font name="Montserrat Regular" size="12.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>
